@@ -5,97 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CS 499 ePortfolio</title>
   <style>
+    :root {
+      --navy-deep: #0a1628;
+      --navy-base: #0f2138;
+      --navy-panel: #14294a;
+      --navy-border: #24395c;
+      --blue-accent: #4d8fd6;
+      --blue-bright: #6fa8e8;
+      --text-main: #dce6f2;
+      --text-soft: #9bb0c9;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 820px;
       margin: 0 auto;
-      padding: 20px;
-      background: #0f172a;
-      color: #e5e7eb
-      line-height: 1.6;
+      padding: 32px 20px 60px;
+      background: var(--navy-deep);
+      color: var(--text-main);
+      line-height: 1.7;
     }
-
-    section {
-      background: #111c2e;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    }
-
 
     h1 {
       text-align: center;
-      color: #f1f5f9;
-      font-size: 1.8rem;
-      margin-bottom: 5px;
+      font-size: 2rem;
+      margin-bottom: 4px;
+      color: #ffffff;
+      letter-spacing: 0.01em;
     }
 
     .subtitle {
       text-align: center;
-      color: #94a3b8;
-      margin-bottom: 30px;
+      color: var(--text-soft);
+      margin-bottom: 28px;
       font-size: 0.95rem;
     }
 
     nav {
       text-align: center;
-      margin-bottom: 30px;
-      border-top: 1px solid #1f2a44;
-      border-bottom: 1px solid #1f2a44;
-      padding: 10px 0;
+      margin-bottom: 36px;
+      background: var(--navy-base);
+      border: 1px solid var(--navy-border);
+      border-radius: 8px;
+      padding: 12px 8px;
     }
 
     nav a {
       margin: 0 10px;
       text-decoration: none;
-      color: #60a5fa;
-      font-size: 0.9rem;
+      color: var(--blue-bright);
+      font-size: 0.88rem;
+      font-weight: 600;
     }
 
-    nav a:hover { 
-      color: #93c5fd;
-      text-decoration: underline; 
+    nav a:hover { color: #ffffff; text-decoration: underline; }
+
+    section {
+      background: var(--navy-panel);
+      padding: 24px 28px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+      border: 1px solid var(--navy-border);
+      margin-bottom: 24px;
     }
 
     h2 {
-      font-size: 1.2rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-      margin-top: 40px;
-      margin-bottom: 10px;
-      color: #f1f5f9;
+      font-size: 1.25rem;
+      border-bottom: 1px solid var(--navy-border);
+      padding-bottom: 8px;
+      margin-top: 0;
+      margin-bottom: 14px;
+      color: var(--blue-bright);
     }
 
-    p { margin-bottom: 10px; }
+    h3 {
+      font-size: 0.95rem;
+      color: var(--blue-bright);
+      margin-top: 18px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    p { margin-bottom: 12px; color: var(--text-main); }
+
+    ul.results {
+      margin: 0 0 14px 0;
+      padding-left: 20px;
+    }
+
+    ul.results li {
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    strong { color: #ffffff; }
 
     a.link {
-      color: #60a5fa;
+      color: var(--blue-bright);
       font-size: 0.9rem;
-      display: block;
-      margin: 5px 0;
+      display: inline-block;
+      margin: 4px 12px 4px 0;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
     }
 
-    a.link:hover { text-decoration: underline; }
-
-    hr {
-      border: none;
-      border-top: 1px solid #eee;
-      margin: 30px 0;
-    }
+    a.link:hover { color: #ffffff; border-bottom-color: var(--blue-bright); }
 
     footer {
       text-align: center;
       font-size: 0.8rem;
-      color: #94a3b8;
-      margin-top: 40px;
-      border-top: 1px solid #1f2a44;
-      padding-top: 15px;
+      color: var(--text-soft);
+      margin-top: 30px;
+      border-top: 1px solid var(--navy-border);
+      padding-top: 16px;
     }
   </style>
 </head>
 <body>
 
-  <h1>H</h1>
+  <h1>Ewan Yosif</h1>
   <p class="subtitle">CS 499 Computer Science Capstone &mdash; Southern New Hampshire University</p>
 
   <nav>
@@ -110,72 +141,98 @@
   <section id="about">
     <h2>Professional Self-Assessment</h2>
 
-    <p>Hello.</p>
+    <p>My name is Ewan Yosif, and I am completing my Bachelor of Science in Computer Science at Southern New Hampshire University. My time in the Computer Science program has helped shape my professional goals and strengthen my understanding of software development. This ePortfolio represents the work I have completed throughout the program and demonstrates the skills I have developed in software design and engineering, algorithms and data structures, and databases.</p>
 
-    <p>Hello.</p>
+    <p>Throughout the program, the three most important concepts I developed were object-oriented programming, database design and management, and problem solving with algorithms. Learning object-oriented programming changed the way I approach coding. Before learning these concepts, I solved problems in a more direct way, but learning better coding practices helped me write code that is more organized and easier to maintain. Database design taught me how to store and manage data in a way that is both efficient and secure. I learned how to create database schemas, write SQL queries, and understand how data affects an application's performance. Working with algorithms also helped me become a better problem solver. I learned that there are often multiple ways to solve the same problem and that developers must consider trade-offs between simplicity, efficiency, and scalability. In addition to the capstone project, other courses throughout the program provided experience with different programming languages, software development practices, and database concepts that helped build the foundation for these enhancements. While I still have more to learn, these skills have given me a much stronger foundation than when I first started the program.</p>
 
-    <p>hello.</p>
+    <p>Throughout the program, communication and collaboration were important parts of the development process. When working on assignments, I often thought about who would be using the software and how different users might interact with it. Considering the needs of different users and stakeholders helped guide many of my design and development decisions. The code review process and instructor feedback also reinforced the importance of clearly explaining technical decisions and documenting changes. Completing the code review for this capstone gave me experience presenting the strengths and weaknesses of a project and explaining planned improvements. These experiences helped me better understand the role communication plays in computer science. As I move into the workforce, I hope to continue strengthening these skills while working with other developers and stakeholders.</p>
 
-    <p>Hello.</p>
+    <p>One of the biggest challenges I faced throughout the program was debugging code and solving problems that did not have obvious solutions. During the capstone project, I encountered several issues that required troubleshooting and testing. One example occurred when edits made on the detail screen were correctly saved to the database but did not appear when returning to the inventory list. After investigating the problem, I found that the inventory list was not refreshing when the activity returned to the screen. I fixed this by overriding the onResume method so the inventory reloads automatically. Another challenge involved the alphabetical sorting feature. Items with different capitalization were not sorting correctly because SQLite treated uppercase and lowercase letters differently. I solved this issue by using a case-insensitive sorting option in the query. These experiences taught me that debugging is more than finding errors. It requires understanding how different parts of an application work together and testing possible solutions carefully.</p>
 
-    <p>Hello.</p>
+    <p>Working through this capstone also gave me a clearer sense of how a structured development process supports better outcomes. Each enhancement followed the same pattern: I planned the change, implemented it, and then tested it directly in the Android emulator before considering it complete. For example, after building the search and sort feature, I tested it with multiple items of varying capitalization before discovering and fixing the sorting issue, and after building the detail view's edit functionality, I tested the save and refresh behavior repeatedly until I found and resolved the issue with the inventory list not updating. Breaking the capstone into separate milestones for software design, algorithms, and databases also mirrored a realistic software development life cycle, where work is scoped, completed, reviewed, and refined in stages rather than all at once. This iterative approach to testing and structured pacing is something I plan to carry forward into professional practice.
+</p>
+
+    <p>The artifact I am most proud of is the inventory management application that I originally created in CS 360 and later enhanced throughout this capstone. This project was important to me because it was the first complete Android application I developed. It required learning Android Studio, working with mobile interfaces, and connecting the application to a database. The enhancements made during the capstone improved the application in meaningful ways. The detail view and stock status indicators improved usability and the overall user experience. The search and sort features made it easier for users to manage larger inventories. The database enhancements improved security and data management through password hashing, schema improvements, and database upgrade protection. Seeing hashed passwords stored in the database instead of plain text helped reinforce the importance of security in software development. I am also proud that all three enhancements work together. The category and price fields added to the database are displayed in the detail view and can be used with the search functionality. This created a project that feels connected and complete rather than a collection of separate enhancements.</p>
+
+    <p>Looking ahead, my goal is to pursue a career in software development. The skills I developed throughout this program, including mobile development, database management, secure coding practices, algorithmic problem solving, and user interface design, are directly related to that goal. This ePortfolio demonstrates my ability to evaluate an existing project, identify areas for improvement, implement meaningful enhancements, and explain the reasoning behind those decisions. These are important skills that software developers use every day, and I feel more prepared to enter the field than when I started the program.</p>
+
+    <p>The three artifacts included in this ePortfolio show different aspects of software development. The software design enhancement demonstrates improvements to usability and application structure. The algorithms enhancement demonstrates problem solving and efficiency through search and sorting features. The database enhancement demonstrates secure data management, database design, and the use of SQL to generate useful information. Together, these artifacts represent the skills I have developed throughout the Computer Science program and serve as the foundation for my future career in software development.</p>
   </section>
-
-  <hr>
 
   <!-- CODE REVIEW -->
   <section id="review">
     <h2>Code Review</h2>
-    <p>Before making any enhancements I completed an informal code review of the original CS 360 inventory management app. The review walks through the existing code, identifies weaknesses, and explains the planned improvements across all three categories.</p>
-    <a class="link" href="YOUR_YOUTUBE_LINK_HERE" target="_blank">Watch Code Review Video</a>
+    <p>Before making any enhancements I completed an informal code review of the original CS 360 inventory management app. The review walks through the existing code, identifies weaknesses, and explains the planned improvements across all three categories. Presenting this review and documenting my reasoning throughout the project also reflects my growth in collaborating with and communicating to a technical audience.</p>
+    <p><strong>Course Outcomes Met:</strong> Course Outcome 1 and Course Outcome 2</p>
+    <a class="link" href="https://www.youtube.com/watch?v=zEQ10D0jDG4
+" target="_blank">Watch Code Review Video &rarr;</a>
   </section>
-
-  <hr>
 
   <!-- ORIGINAL ARTIFACT -->
   <section id="original">
     <h2>Original Artifact</h2>
-    <p>The original CS 360 inventory management application before any enhancements were made.</p>
-    <a class="link" href="https://github.com/TheCoder6324/TheCoder6324.github.io/tree/main/Original_Artifact">Download Original Code</a>
+    <p>This is the original inventory management application as it existed at the end of CS 360, before any of the enhancement work for this capstone began. At this stage the app was functional but limited: inventory items were displayed only as bare rows showing a name and quantity, with no way to view further detail or edit an item without going back through the basic list controls. The database layer stored user passwords as plain, unencrypted text, had no fields for category or price, included no timestamp tracking, and used an upgrade method that would permanently delete all existing data if the schema ever changed. There was also no way to search or sort the inventory, so the list became harder to manage as more items were added. This version is included so reviewers can see the true starting point of the project and measure the depth of the improvements made across all three enhancement categories.</p>
+    <a class="link" href="https://github.com/TheCoder6324/TheCoder6324.github.io/tree/main/Original_Artifact">Download Original Code &rarr;</a>
   </section>
-
-  <hr>
 
   <!-- CATEGORY 1 -->
   <section id="cat1">
     <h2>Enhancement One &mdash; Software Design and Engineering</h2>
-    <p>This enhancement improved the user interface and software design by adding a full screen item detail view, color coded stock status indicators, in place editing, and strengthened input validation.</p>
-    <p><strong>Course Outcomes Met:</strong> Course Outcome 4 and Course Outcome 5</p>
-    <a class="link" href="https://github.com/TheCoder6324/TheCoder6324.github.io/tree/main/Artifact_1_Software_Design">Download Enhanced Code</a>
-    <a class="link" href="https://github.com/TheCoder6324/TheCoder6324.github.io/blob/main/Artifact_1_Software_Design/Category1_Narrative.pdf">Read Narrative</a>
-  </section>
+    <p>The original inventory screen only displayed an item's name and quantity in a compact row, with no way to view additional details or make changes without navigating through the basic list controls. This enhancement redesigned that experience by introducing a dedicated, full screen detail view that opens whenever a user taps on an inventory item. The new screen presents the item's name, quantity, category, and price in a clean, organized layout, and includes a color coded stock status banner that immediately communicates whether an item is in stock, running low, or completely out of stock. Users can now also edit an item's name and quantity directly from this screen instead of being routed back through the main list, and every input field across the app was updated with stronger validation to block negative quantities and overly long item names before they ever reach the database.</p>
 
-  <hr>
+    <h3>Enhancement Results</h3>
+    <ul class="results">
+      <li>Added a full screen item detail view accessible by tapping any inventory item</li>
+      <li>Introduced a color coded stock status banner (in stock, low stock, out of stock) for instant visual feedback</li>
+      <li>Enabled in place editing of item name and quantity directly from the detail screen</li>
+      <li>Strengthened input validation to block negative quantities and excessively long item names</li>
+      <li>Resolved a refresh bug where edited values were not reflected on the inventory list until the onResume method was added</li>
+    </ul>
+
+    <p><strong>Course Outcomes Met:</strong> Course Outcome 4 and Course Outcome 5</p>
+    <a class="link" href="https://github.com/TheCoder6324/TheCoder6324.github.io/tree/main/Artifact_1_Software_Design">Download Enhanced Code &rarr;</a>
+    <a class="link" href="https://github.com/TheCoder6324/TheCoder6324.github.io/blob/main/Artifact_1_Software_Design/Category1_Narrative.pdf">Read Narrative &rarr;</a>
+  </section>
 
   <!-- CATEGORY 2 -->
   <section id="cat2">
     <h2>Enhancement Two &mdash; Algorithms and Data Structures</h2>
-    <p>This enhancement improved the efficiency and usability of the inventory list by adding a real time search bar and sort toggle button implemented at the database level.</p>
-    <p><strong>Course Outcomes Met:</strong> Course Outcome 3 and Course Outcome 4</p>
-    <a class="link" href="Category2_Enhanced.zip">Download Enhanced Code</a>
-    <a class="link" href="Category2_Narrative.docx">Read Narrative</a>
-  </section>
+    <p>The original inventory list had no way to search or sort items, which meant that as the inventory grew, finding a specific item required scrolling through the entire list manually. This enhancement addressed that limitation by introducing a real time search bar and a sort toggle button at the top of the inventory screen. As a user types into the search bar, the list filters instantly to show only matching results, and the sort toggle allows switching between alphabetical order and lowest quantity first, which makes it easy to spot items that need restocking. Both features were implemented at the database query level rather than by filtering data in memory, which keeps performance consistent even as the inventory scales up. While building this feature, a case sensitivity issue was discovered where item names with mixed capitalization or spacing were sorting incorrectly, and that was resolved with a case insensitive sort directive.</p>
 
-  <hr>
+    <h3>Enhancement Results</h3>
+    <ul class="results">
+      <li>Added a real time search bar that filters the inventory list as the user types</li>
+      <li>Added a sort toggle button to switch between alphabetical order and lowest quantity first</li>
+      <li>Implemented filtering and sorting directly in the SQL query rather than in application memory for better scalability</li>
+      <li>Fixed a case sensitivity bug affecting alphabetical sorting by adding a case insensitive sort directive</li>
+    </ul>
+
+    <p><strong>Course Outcomes Met:</strong> Course Outcome 3 and Course Outcome 4</p>
+    <a class="link" href="https://github.com/TheCoder6324/TheCoder6324.github.io/tree/main/Artifact_2_Algorithms">Download Enhanced Code &rarr;</a>
+    <a class="link" href="https://github.com/TheCoder6324/TheCoder6324.github.io/blob/main/Artifact_2_Algorithms/Category2_Narrative.pdf">Read Narrative &rarr;</a>
+  </section>
 
   <!-- CATEGORY 3 -->
   <section id="cat3">
     <h2>Enhancement Three &mdash; Databases</h2>
-    <p>This enhancement improved the database design and security by expanding the schema, fixing the upgrade method, implementing password hashing, and adding an inventory summary analytics screen.</p>
+    <p>The original database had several structural and security weaknesses. User passwords were stored as plain, readable text, the inventory table had no fields for category, price, or creation date, and the schema upgrade method was written in a way that would permanently delete all existing data if the database structure ever changed in the future. This enhancement rebuilt the database layer to address each of these issues. Passwords are now hashed using SHA-256 before they are ever stored, the inventory table was expanded with category, price, and timestamp fields, and the upgrade method was rewritten to preserve existing data during schema changes instead of wiping it out. An Inventory Summary screen was also added that uses SQL aggregate functions to surface useful information at a glance, including total inventory count, items low or out of stock, total inventory value, and the most expensive and most stocked items.</p>
+
+    <h3>Enhancement Results</h3>
+    <ul class="results">
+      <li>Implemented SHA-256 password hashing so credentials are never stored as plain text</li>
+      <li>Expanded the inventory schema to include category, price, and creation timestamp fields</li>
+      <li>Rewrote the database upgrade method to preserve existing data instead of deleting it during schema changes</li>
+      <li>Built an Inventory Summary screen using SQL aggregate functions (COUNT, SUM, MAX) to report total items, low and out of stock counts, total inventory value, and top items</li>
+    </ul>
+
     <p><strong>Course Outcomes Met:</strong> Course Outcome 3, Course Outcome 4, and Course Outcome 5</p>
-    <a class="link" href="Category3_Enhanced.zip">Download Enhanced Code</a>
-    <a class="link" href="Category3_Narrative.docx">Read Narrative</a>
+    <a class="link" href="https://github.com/TheCoder6324/TheCoder6324.github.io/tree/main/Artifact_3_Databases">Download Enhanced Code &rarr;</a>
+    <a class="link" href="https://github.com/TheCoder6324/TheCoder6324.github.io/blob/main/Artifact_3_Databases/Category3_Narrative.pdf">Read Narrative &rarr;</a>
   </section>
 
   <footer>
-    <p>HELLO </p>
+    <p>Ewan Yosif &mdash; CS 499 Computer Science Capstone &mdash; Southern New Hampshire University</p>
   </footer>
 
 </body>
 </html>
-
